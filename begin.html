@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>begin</title>
+  </head>
+  <body>
+    <h2>begin="3s;6s"</h2>
+    <svg width="320" height="200" xmlns="http://www.w3.org/2000/svg">
+      <text font-family="microsoft yahei" font-size="120" y="150" x="160">
+        虎
+        <animate attributeName="x" by="-40" dur="3s" begin="3s;6s" />
+      </text>
+    </svg>
+    <h2>begin="xx.end"</h2>
+    <svg width="320" height="200" xmlns="http://www.w3.org/2000/svg">
+      <text font-family="microsoft yahei" font-size="120" y="160" x="160">
+        兔
+        <animate
+          id="xx"
+          attributeName="x"
+          to="60"
+          begin="0s"
+          dur="3s"
+          fill="freeze"
+        />
+        <animate
+          attributeName="y"
+          to="100"
+          begin="xx.end"
+          dur="3s"
+          fill="freeze"
+        />
+      </text>
+    </svg>
+    <h2>begin="circle.click"</h2>
+    <svg id="svg" width="320" height="200" xmlns="http://www.w3.org/2000/svg">
+      <circle id="circle" cx="100" cy="100" r="50"></circle>
+      <text font-family="microsoft yahei" font-size="120" y="160" x="160">
+        龙
+        <animate
+          attributeName="x"
+          to="200"
+          begin="circle.click"
+          dur="3s"
+          fill="freeze"
+        />
+      </text>
+    </svg>
+    <h2>begin="xxx.repeat(2)"</h2>
+    <svg width="320" height="200" xmlns="http://www.w3.org/2000/svg">
+      <text font-family="microsoft yahei" font-size="120" y="160" x="160">
+        蛇
+        <animate
+          id="xxx"
+          attributeName="x"
+          to="60"
+          begin="0s"
+          dur="3s"
+          repeatCount="indefinite"
+        />
+        <animate
+          attributeName="y"
+          to="100"
+          begin="xxx.repeat(2)"
+          dur="3s"
+          fill="freeze"
+        />
+      </text>
+    </svg>
+  </body>
+</html>
